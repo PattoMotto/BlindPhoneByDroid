@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.android.blindphonebydroid.caller"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@style/CustomTheme">
+        <activity
+            android:label="@string/app_name"
+            android:name="org.android.blindphonebydroid.caller.MainListActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="@string/titleContactActivity"
+            android:name="org.android.blindphonebydroid.caller.ContactActivity"
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.ContactActivity" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="@string/titleCallActivity"
+            android:name="org.android.blindphonebydroid.caller.CallActivity"
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.CallAct" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="@string/titleCallLogActivity"
+            android:name="org.android.blindphonebydroid.caller.CallLogActivity"
+            android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.CallLogAct" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BlindPhone ByDroid</string>
+    <string name="titleCallActivity">Call Page</string>
+    <string name="titleCallLogActivity">CallLog Page</string>
+    <string name="titleContactActivity">Contact Page</string>
+ 
+</resources>

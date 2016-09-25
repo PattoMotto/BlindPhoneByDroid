@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color -->
+    <color name="RowFontText">#000000</color>
+	<color name="Row_Background_Selected">#00FFFF</color>
+	<color name="Row_Background_Unselected">#FFFFFF</color>
+	
+	<!-- Style -->
+	<style name="Row">
+		<item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:padding">3dip</item>
+	   <item name="android:gravity">center</item>
+	</style>
+	
+	<style name="Row.Unselected">
+	     <item name="android:minHeight">30dp</item>
+	     <item name="android:textSize">18dp</item>
+	     <item name="android:textColor">@color/RowFontText</item>
+	     <!-- <item name="android:background">@color/Row_Background_Unselected</item>  -->
+	</style>
+    
+    <style name="Row.Selected">
+	    <item name="android:minHeight">50dp</item>
+	    <item name="android:textSize">30dp</item>
+	</style>
+	
+    <!-- Theme -->
+    <style name="CustomTheme" parent="android:Theme.Light">
+    
+    </style>
+    <!-- 
+    <style name="theme0" parent="android:theme">
+        <item name="android:textColor">#0066ff</item>
+		<item name="android:background">#000000</item>
+		<item name="android:divider">#000099</item>
+    </style>
+    <style name="theme1" parent="android:Theme.Light">
+        <item name="android:textColor">#ff0000</item>
+		<item name="android:background">#000000</item>
+		<item name="android:divider">#800000</item> 
+    </style> -->
+</resources>
